@@ -33,6 +33,10 @@ The game ends when time runs out or all the questions are completed. At that tim
 
 <img src="Assets/images/gameend.png" alt="The end of the game which tells the players their score and prompt to input their initials">
 
+**The player is prompted if they don't input initials**
+
+<img src="Assets/images/invalid.png" alt="Quiz complete initials input field with alert for no input">
+
 When the player clicks on High Scores previous scores are displayed with the option to clear or go back to take the quiz again.
 
 <img src="Assets/images/highscores.png" alt="A list of high scores with player initials. There are options to clear scores or return to take the quiz again">

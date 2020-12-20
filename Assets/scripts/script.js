@@ -101,14 +101,14 @@ function compare(event) {
             createDiv.textContent = "Correct! The answer is:  " + questions[questionIndex].answer;
         } else {
             secondsLeft = secondsLeft - penalty;
-            createDiv.textContent = "Wrong! The correct answer is:  " + questions[questionIndex].answer;
+            createDiv.textContent = "Sorry! The correct answer is:  " + questions[questionIndex].answer;
         }
 
     }
     questionIndex++;
     if (questionIndex >= questions.length) {
         allDone();
-        createDiv.textContent = "Game Over," + " " + "nice job --> " + score + " of " + questions.length + " Correct";
+        createDiv.textContent = "Game over," + " " + "nice job --> " + score + " of " + questions.length + " Correct";
     } else {
         render(questionIndex);
     }
@@ -164,7 +164,7 @@ function allDone() {
     createSubmit.addEventListener("click", function() {
         var initials = createInput.value;
 
-        if (initials === null) {
+        if (initials == "") {
 
             alert("Please enter initials!");
 
