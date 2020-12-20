@@ -25,17 +25,17 @@ In order to simplify my javascript I used individual scripts for my quiz page an
 - THEN I can save my initials and score
 
 
-<href src="Assets/images/quizstart.png" alt="The start of the quiz with penalty explained and link to High Scores">
+<img src="Assets/images/quizstart.png" alt="The start of the quiz with penalty explained and link to High Scores">
 
-<href src="Assets/images/questions.png" alt="Questions with multiple choice answers. The timer is displayed in the right hand corner">
+<img src="Assets/images/questions.png" alt="Questions with multiple choice answers. The timer is displayed in the right hand corner">
 
 The game ends when time runs out or all the questions are completed. At that time the player is asked to imput their initials.
 
-<href src="Assets/images/gameend.png" alt="The end of the game which tells the players their score and prompt to input their initials">
+<img src="Assets/images/gameend.png" alt="The end of the game which tells the players their score and prompt to input their initials">
 
 When the player clicks on High Scores previous scores are displayed with the option to clear or go back to take the quiz again.
 
-<href src="Assets/images/highscores.png" alt="A list of high scores with player initials. There are options to clear scores or return to take the quiz again">
+<img src="Assets/images/highscores.png" alt="A list of high scores with player initials. There are options to clear scores or return to take the quiz again">
 
 The high score is maintained in the local database until the browser is closed. 
 
