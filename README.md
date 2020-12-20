@@ -24,9 +24,9 @@ In order to simplify my javascript I used individual scripts for my quiz page an
 - WHEN the game is over
 - THEN I can save my initials and score
 
-
+**Start the quiz**
 <img src="Assets/images/quizstart.png" alt="The start of the quiz with penalty explained and link to High Scores">
-
+**Select the correct answer**
 <img src="Assets/images/questions.png" alt="Questions with multiple choice answers. The timer is displayed in the right hand corner">
 
 The game ends when time runs out or all the questions are completed. At that time the player is asked to imput their initials.
