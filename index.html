@@ -3,12 +3,38 @@
 
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Exo:ital,wght@1,300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="Assets/css/style.css">
 
-    <body>
-        <h1>I have not submitted this homework yet</h1>
+    <title>Trivia Quiz</title>
 
-        <img src="Assets/images/UnderConstruction.png" width="300px" height="300px">
+</head>
 
-    </body>
+<body>
+
+    <div class="container-fluid">
+        <div id="wrapper">
+
+            <a href="hs.html"> <button type="button">High Scores</button></a>
+            <div id="currentTime"></div>
+
+            <div id="questionsDiv">
+                <h1>How about some trivia?</h1>
+                <p style="text-align:center">Answer these trivia questions.</p>
+
+                <ul id="choicesUl"></ul>
+                <button id="startTime">Start Quiz</button>
+                <p style="text-align:center; color:red">10 second penalty for wrong answers!</p>
+            </div>
+
+        </div>
+    </div>
+
+    <script src="Assets/scripts/script.js"></script>
+
+
+</body>
 
 </html>

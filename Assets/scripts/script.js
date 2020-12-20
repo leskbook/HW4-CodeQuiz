@@ -47,10 +47,13 @@ var secondsLeft = 76;
 var holdInterval = 0;
 var penalty = 10;
 var ulCreate = document.createElement("ul");
-var highScore = document.querySelector("#highScore");
-var clear = document.querySelector("#clear");
-var goBack = document.querySelector("#goBack");
 
+//Defined on hs.js to maintain logical flow
+//var highScore = document.querySelector("#highScore");
+//var clear = document.querySelector("#clear");
+//var goBack = document.querySelector("#goBack");
+
+//Countdown timer 
 
 timer.addEventListener("click", function() {
 
@@ -62,7 +65,7 @@ timer.addEventListener("click", function() {
             if (secondsLeft <= 0) {
                 clearInterval(holdInterval);
                 allDone();
-                currentTime.textContent = "Time's up!";
+                currentTime.textContent = "Time is up!";
             }
         }, 1000);
     }
@@ -70,7 +73,7 @@ timer.addEventListener("click", function() {
 });
 
 function render(questionIndex) {
-    // Clears existing data 
+
     questionsDiv.innerHTML = "";
     ulCreate.innerHTML = "";
 
@@ -87,7 +90,7 @@ function render(questionIndex) {
         listItem.addEventListener("click", (compare));
     })
 }
-
+//Evaluate answers
 function compare(event) {
     var element = event.target;
     if (element.matches("li")) {
@@ -105,7 +108,7 @@ function compare(event) {
     questionIndex++;
     if (questionIndex >= questions.length) {
         allDone();
-        createDiv.textContent = "Game Over" + " " + "Good work--> " + score + " of " + questions.length + " Correct";
+        createDiv.textContent = "Game Over," + " " + "nice job --> " + score + " of " + questions.length + " Correct";
     } else {
         render(questionIndex);
     }
@@ -132,7 +135,7 @@ function allDone() {
         var timeRemaining = secondsLeft;
         var createP2 = document.createElement("p");
         clearInterval(holdInterval);
-        createP.textContent = "Your final score is: " + timeRemaining;
+        createP.textContent = "Your final score is: " + timeRemaining + "- ROCK STAR!";
 
         questionsDiv.appendChild(createP2);
     }
@@ -163,7 +166,7 @@ function allDone() {
 
         if (initials === null) {
 
-            console.log("No value entered!");
+            alert("Please enter initials!");
 
         } else {
             var finalScore = {
